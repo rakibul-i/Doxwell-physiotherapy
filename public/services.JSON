@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1",
+    "name": "Massage Therapy",
+    "image": "https://i.ibb.co/M1m6CrX/Young-woman-getting-massage-in-chair-in-therapy-room.jpg",
+    "description": "Massage therapy is used to help manage a health condition or enhance wellness. It involves manipulating the soft tissues of the body. Massage has been practiced in most cultures, both Eastern and Western, throughout human history, and was one of the earliest tools that people used to try to relieve pain.",
+    "banner": "http://wp2.commonsupport.com/newwp/doxwell/wp-content/uploads/2017/12/services-11.jpg",
+    "benefit": [
+      "Those who do not know how to pursue",
+      "Pleasure rationally encounter",
+      "Consequences that are extremely painful.",
+      "Nor again is there anyone who loves or pursues"
+    ],
+    "cost": 39
+  },
+  {
+    "id": "2",
+    "name": "Physiotherapy",
+    "image": "https://i.ibb.co/S3VQKb6/Physiotherapy.jpg",
+    "description": "Physiotherapy is treatment to restore, maintain, and make the most of a patient's mobility, function, and well-being. Physiotherapy helps through physical rehabilitation, injury prevention, and health and fitness. Physiotherapists get you involved in your own recovery.",
+    "banner": "http://wp2.commonsupport.com/newwp/doxwell/wp-content/uploads/2017/12/services-19.jpg",
+    "benefit": [
+      "Those who do not know how to pursue",
+      "Pleasure rationally encounter",
+      "Consequences that are extremely painful.",
+      "Nor again is there anyone who loves or pursues"
+    ],
+    "cost": 41
+  },
+  {
+    "id": "3",
+    "name": "Chiroptratic Therapy",
+    "image": "https://i.ibb.co/swWGKZT/chiropractic-1.jpg",
+    "description": "Chiropractic therapy may be used to treat conditions such as back pain, neck pain, headache, and hand or foot problems, and to improve overall health. It is a type of complementary and alternative medicine (CAM). It can also help maintain healthy spine and joint function, even if you do not have painful symptoms.",
+    "banner": "http://wp2.commonsupport.com/newwp/doxwell/wp-content/uploads/2017/12/services-19.jpg",
+    "benefit": [
+      "Those who do not know how to pursue",
+      "Pleasure rationally encounter",
+      "Consequences that are extremely painful.",
+      "Nor again is there anyone who loves or pursues"
+    ],
+    "cost": 41
+  },
+  {
+    "id": "4",
+    "name": "Sport Injuries",
+    "image": "https://i.ibb.co/4Zj7m3D/sports-injuries-s13-achilles-tendonitis.jpg",
+    "description": "Sports injuries are injuries that occur when engaging in sports or exercise. Sports injuries can occur due to overtraining, lack of conditioning, and improper form or technique. Failing to warm up increases the risk of sports injuries. Bruises, strains, sprains, tears, and broken bones can result from sports injuries.",
+    "banner": "http://wp2.commonsupport.com/newwp/doxwell/wp-content/uploads/2017/12/services-19.jpg",
+    "benefit": [
+      "Those who do not know how to pursue",
+      "Pleasure rationally encounter",
+      "Consequences that are extremely painful.",
+      "Nor again is there anyone who loves or pursues"
+    ],
+    "cost": 35
+  },
+  {
+    "id": "5",
+    "name": "Heat & Cold Therapy",
+    "image": "https://i.ibb.co/NrrnGXm/heat-theraphy.jpg",
+    "description": "Heat therapy — As a general rule of thumb, use ice for acute injuries or pain, along with inflammation and swelling. Use heat for muscle pain or stiffness.Cold treatment reduces inflammation by decreasing blood flow. Apply within 48 hours after an injury. Heat treatment promotes blood flow and helps muscles relax.",
+    "banner": "http://wp2.commonsupport.com/newwp/doxwell/wp-content/uploads/2017/12/services-19.jpg",
+    "benefit": [
+      "Those who do not know how to pursue",
+      "Pleasure rationally encounter",
+      "Consequences that are extremely painful.",
+      "Nor again is there anyone who loves or pursues"
+    ],
+    "cost": 15
+  },
+  {
+    "id": "6",
+    "name": "Work Injuries",
+    "image": "https://i.ibb.co/Gp6qKT4/work-injuries.jpg",
+    "description": "Workplace injuries are injuries or illnesses that occur in relation to an employee's job. Most states narrow the definition of a workplace injury to one that “arises out of and in the course of employment” to prevent employees from pursuing compensation for injuries not directly caused by the job.",
+    "banner": "http://wp2.commonsupport.com/newwp/doxwell/wp-content/uploads/2017/12/services-19.jpg",
+    "benefit": [
+      "Those who do not know how to pursue",
+      "Pleasure rationally encounter",
+      "Consequences that are extremely painful.",
+      "Nor again is there anyone who loves or pursues"
+    ],
+    "cost": 12
+  }
+]
