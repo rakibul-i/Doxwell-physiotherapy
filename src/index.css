@@ -44,3 +44,13 @@
   width: 600px;
   height: 370px;
 }
+
+/* // signup page background image */
+.signup {
+  background-image: url("https://www.athletadesk.com/wp-content/uploads/2016/08/join-background.jpg");
+  background-repeat: no repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+/* // form styles */

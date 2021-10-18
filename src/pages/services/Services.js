@@ -3,7 +3,11 @@ import useAuth from "../../context/useAuth";
 import Service from "./Service";
 
 const Services = () => {
-  const { services } = useAuth();
+  const { services, isLoading } = useAuth();
+
+  if (isLoading) {
+    return <div>loading...</div>;
+  }
 
   return (
     <div className="w-9/12 mx-auto">
