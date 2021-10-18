@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Service = (props) => {
   const { name, image, id, description } = props.service;
-  const desc = description.slice(0, 60);
+  const desc = description.slice(0, 80);
   return (
     <div className="p-5 shadow-md my-3 mx-3 overflow-hidden rounded-md">
       <div className="overflow-hidden">
@@ -13,7 +13,6 @@ const Service = (props) => {
         {name}
       </h1>
       <p className="text-sm text-gray-400 text-center pb-4">{desc}...</p>
-
       <div className="text-center py-2">
         <Link
           to={`/service/${id}`}

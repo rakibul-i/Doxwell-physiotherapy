@@ -39,3 +39,8 @@
 .service-image:hover {
   transform: scale(1.2);
 }
+
+.service-detail-image {
+  width: 600px;
+  height: 370px;
+}

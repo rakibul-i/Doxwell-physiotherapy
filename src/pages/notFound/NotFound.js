@@ -5,7 +5,7 @@ const NotFound = () => {
   return (
     <div
       className="w-9/12 mx-auto flex  justify-center items-center"
-      style={{ height: "600px" }}
+      style={{ height: "660px" }}
     >
       <div className="text-center">
         <h1>
