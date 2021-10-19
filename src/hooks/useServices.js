@@ -7,7 +7,7 @@ const useServices = () => {
     fetch("services.JSON")
       .then((response) => response.json())
       .then((data) => setServices(data));
-  }, []);
+  }, [services]);
   return [services];
 };
 

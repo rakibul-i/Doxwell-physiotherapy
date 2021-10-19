@@ -9,7 +9,7 @@ import GoogleSignin from "./GoogleSignin";
 import useAuth from "../../context/useAuth";
 
 const Signup = () => {
-  const { signupWithEmailAndPassword, error } = useAuth();
+  const { signupWithEmailAndPassword } = useAuth();
 
   const {
     register,
@@ -19,6 +19,7 @@ const Signup = () => {
   const onSubmit = (data) => {
     signupWithEmailAndPassword(data.email, data.password);
   };
+
   return (
     <div className="signup flex items-center justify-center ">
       <div className="bg-green-200 md:p-12 px-1 py-8 text-center rounded relative">

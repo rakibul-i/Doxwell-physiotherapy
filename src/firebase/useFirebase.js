@@ -27,6 +27,7 @@ const useFirebase = () => {
 
   // googel sign in
   const signInWithGoogle = () => {
+    setIsLoading(true);
     const googleProvider = new GoogleAuthProvider();
     signInWithPopup(auth, googleProvider)
       .then((result) => {
@@ -36,11 +37,15 @@ const useFirebase = () => {
       })
       .catch((err) => {
         setError(err.message);
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   };
 
   // create user with email and password
   const signupWithEmailAndPassword = (email, password) => {
+    setIsLoading(true);
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
         setUser(result.user);
@@ -50,11 +55,15 @@ const useFirebase = () => {
       })
       .catch((err) => {
         setError(err.message);
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   };
 
   // sign in with email and password
   const loginWithEmailAndPassword = (email, password) => {
+    setIsLoading(true);
     signInWithEmailAndPassword(auth, email, password)
       .then((result) => {
         setUser(result.user);
@@ -64,24 +73,29 @@ const useFirebase = () => {
       })
       .catch((err) => {
         setError(err.message);
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   };
 
   // handle on state change
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
+    const unsubscribed = onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
         setIsLoading(false);
       } else {
         setUser(null);
       }
+      setIsLoading(false);
     });
-    return () => unsubscribe;
+    return () => unsubscribed;
   }, [auth]);
 
   // log out
   const logOut = () => {
+    setIsLoading(true);
     signOut(auth)
       .then(() => {
         setUser(null);
@@ -89,6 +103,9 @@ const useFirebase = () => {
       })
       .catch((err) => {
         setError(err.message);
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   };
 

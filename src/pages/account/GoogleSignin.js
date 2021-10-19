@@ -3,8 +3,7 @@ import { FcGoogle } from "react-icons/fc";
 import useAuth from "../../context/useAuth";
 
 const GoogleSignin = () => {
-  const { signInWithGoogle, user } = useAuth();
-  console.log(user);
+  const { signInWithGoogle } = useAuth();
   return (
     <div className="text-center mt-4">
       <button
