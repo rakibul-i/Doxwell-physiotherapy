@@ -9,7 +9,7 @@ const GoogleSignin = () => {
     <div className="text-center mt-4">
       <button
         onClick={signInWithGoogle}
-        className=" ml-7 flex justify-center text-gray-100 items-center px-4 py-2 rounded bg-purple-400 "
+        className=" ml-7  flex justify-center text-gray-100 items-center px-4 py-2 rounded bg-purple-400 "
       >
         <FcGoogle className="text-3xl mr-4" /> Continue with Google
       </button>

@@ -3,7 +3,7 @@ import Benefiits from "./Benefiits";
 
 const AboutSection = () => {
   return (
-    <div className="w-9/12 mx-auto md:p-5 p-2">
+    <div className="md:w-9/12 w-11/12 mx-auto md:p-5 p-2">
       <Benefiits />
     </div>
   );

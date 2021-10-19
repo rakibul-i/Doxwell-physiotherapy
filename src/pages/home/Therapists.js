@@ -11,7 +11,7 @@ const Therapists = () => {
       .then((data) => setTherapists(data));
   }, []);
   return (
-    <div className="w-9/12 mx-auto my-16">
+    <div className="md:w-9/12 w-11/12 mx-auto my-16">
       <h1 className="text-gray-300 md:text-5xl text-2xl font-serif ">
         Therapists___
       </h1>

@@ -32,7 +32,7 @@ const Header = () => {
         </button>
       </div>
       {/* // mobile menu */}
-      <div className={isShow ? "hidden" : "block"}>
+      <div className={isShow === null ? "hidden" : "block"}>
         <MobileMenu />
       </div>
     </div>

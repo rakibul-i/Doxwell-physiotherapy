@@ -10,7 +10,7 @@ const Services = () => {
   }
 
   return (
-    <div className="w-9/12 mx-auto">
+    <div className="md:w-9/12 w-11/12 mx-auto">
       <h1 className="py-5 md:text-5xl text-2xl font-semibold text-gray-300 font-serif">
         Services______
       </h1>

@@ -19,11 +19,11 @@ const Signin = () => {
   };
   return (
     <div className="signup flex items-center justify-center ">
-      <div className="bg-green-200 md:p-12 p-5 text-center rounded relative">
+      <div className="bg-green-200 md:p-12 px-1 py-8 text-center rounded relative">
         <form onSubmit={handleSubmit(onSubmit)}>
           <span className="text-center mx-auto">
             <FaUserCircle
-              className=" text-green-700 absolute  right-40 "
+              className=" text-green-700 absolute  md:right-40 right-32"
               style={{ fontSize: "90px", top: "-40px" }}
             />
           </span>
@@ -38,24 +38,24 @@ const Signin = () => {
             {errors.username?.type === "required" &&
               "Username name is required"}
           </span>
-          <div className="flex items-center bg-white px-3 rounded my-3">
-            <HiOutlineMail className="text-xl text-green-500 mx-3" />
+          <div className="flex items-center bg-white md:px-3 px-0 rounded my-3">
+            <HiOutlineMail className="text-xl text-green-500 md:mx-3 mx-1" />
             <input
               type="email"
               placeholder="Email"
-              className=" px-4 py-2 focus:outline-none"
+              className=" md:px-4 px-1 py-2 focus:outline-none"
               {...register("email", { required: true })}
             />
           </div>
           <span className="text-sm text-red-500">
             {errors.email?.type === "required" && "email name is required"}
           </span>
-          <div className="flex items-center bg-white px-3 rounded mt-3">
-            <RiLockPasswordLine className="text-xl text-green-500 mx-3" />
+          <div className="flex items-center bg-white md:px-3 px-0 rounded mt-3">
+            <RiLockPasswordLine className="text-xl text-green-500 md:mx-3 mx-1" />
             <input
               type="password"
               placeholder="Password"
-              className=" px-4 py-2 focus:outline-none"
+              className=" md:px-4 px-1 py-2 focus:outline-none"
               {...register("password", {
                 required: true,
                 pattern: /^(?=.{8,})/,
