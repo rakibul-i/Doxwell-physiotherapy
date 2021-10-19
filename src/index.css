@@ -53,4 +53,12 @@
   height: 800px;
 }
 
-/* // form styles */
+/* therapist image img */
+.therapist-image {
+  width: 300px;
+  height: 300px;
+  transition: transform 0.5s;
+}
+.therapist-image:hover {
+  transform: scale(1.2);
+}

@@ -11,6 +11,8 @@ import Signup from "./pages/account/Signup";
 import Signin from "./pages/account/Signin";
 import Profile from "./pages/profile/Profile";
 import PrivateRoute from "./firebase/PrivateRoute";
+import AboutSection from "./pages/about/AboutSection";
+import Therapists from "./pages/therapists/Therapists";
 
 function App() {
   return (
@@ -26,7 +28,13 @@ function App() {
         <PrivateRoute path="/services">
           <Services />
         </PrivateRoute>
-        <Route path="/about" component={About} />
+        <PrivateRoute path="/therapists">
+          <Therapists />
+        </PrivateRoute>
+        <Route path="/about">
+          <About />
+          <AboutSection />
+        </Route>
         <Route exact path="/home" component={Home} />
         <Route exact path="/" component={Home} />
         <Route path="*" component={NotFound} />
