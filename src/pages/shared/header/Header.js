@@ -6,7 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import MobileMenu from "./MobileMenu";
 
 const Header = () => {
-  const [isShow, setIsShow] = useState(false);
+  const [isShow, setIsShow] = useState(true);
 
   const mobileMenuHandler = () => {
     setIsShow(!isShow);
