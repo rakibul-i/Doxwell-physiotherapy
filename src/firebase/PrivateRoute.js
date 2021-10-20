@@ -1,4 +1,4 @@
-import { Route, Redirect, useLocation } from "react-router-dom";
+import { Route, Redirect } from "react-router-dom";
 import useAuth from "../context/useAuth";
 
 const PrivateRoute = ({ children, ...rest }) => {

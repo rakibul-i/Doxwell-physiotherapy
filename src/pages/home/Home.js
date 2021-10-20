@@ -2,7 +2,7 @@ import React from "react";
 import About from "../shared/About";
 import Therapists from "./Therapists";
 import Banner from "./Banner";
-import Services from "./Services";
+import Services from "../services/Services";
 
 const Home = () => {
   return (

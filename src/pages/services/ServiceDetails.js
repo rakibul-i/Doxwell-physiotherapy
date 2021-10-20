@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import useAuth from "../../context/useAuth";
 import { TiMediaRecordOutline } from "react-icons/ti";
@@ -6,7 +6,17 @@ import { BsBookmarkCheck } from "react-icons/bs";
 
 const ServiceDetails = () => {
   const { id } = useParams();
-  const { services } = useAuth();
+  const [services, setServices] = useState([]);
+
+  useEffect(() => {
+    fetch(
+      "https://raw.githubusercontent.com/Mohammed-Rakib/data/main/services.json"
+    )
+      .then((response) => response.json())
+      .then((data) => setServices(data));
+  }, [services]);
+
+  // finding matched data
   const service = services.find((service) => service.id === id);
   return (
     <div className="w-9/12 mx-auto py-5">

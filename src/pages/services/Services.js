@@ -5,6 +5,17 @@ import Service from "./Service";
 const Services = () => {
   const { services } = useAuth();
 
+  if (services.length === 0) {
+    return (
+      <div
+        className="flex items-center justify-center"
+        style={{ minHeight: "700px" }}
+      >
+        <h1 className="text-3xl text-red-400">Loading.....</h1>
+      </div>
+    );
+  }
+
   return (
     <div className="md:w-9/12 w-11/12 mx-auto">
       <h1 className="py-5 md:text-5xl text-2xl font-semibold text-gray-300 font-serif">
