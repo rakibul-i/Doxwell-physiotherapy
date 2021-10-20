@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import useAuth from "../../context/useAuth";
 import { TiMediaRecordOutline } from "react-icons/ti";
 import { BsBookmarkCheck } from "react-icons/bs";
+import BookAppoinment from "./BookAppoinment";
 
 const ServiceDetails = () => {
   const { id } = useParams();
@@ -14,7 +14,7 @@ const ServiceDetails = () => {
     )
       .then((response) => response.json())
       .then((data) => setServices(data));
-  }, [services]);
+  }, []);
 
   // finding matched data
   const service = services.find((service) => service.id === id);
@@ -56,10 +56,7 @@ const ServiceDetails = () => {
         </div>
         <div className="px-5 ">
           <div>
-            <button className="bg-red-200 p-5 rounded-md flex">
-              <BsBookmarkCheck className="mt-1 mr-3 text-xl text-green-600" />{" "}
-              Book Appointment
-            </button>
+            <BookAppoinment />
           </div>
         </div>
       </div>

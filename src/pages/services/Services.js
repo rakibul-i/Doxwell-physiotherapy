@@ -1,9 +1,16 @@
-import React from "react";
-import useAuth from "../../context/useAuth";
+import React, { useEffect, useState } from "react";
 import Service from "./Service";
 
 const Services = () => {
-  const { services } = useAuth();
+  const [services, setServices] = useState([]);
+
+  useEffect(() => {
+    fetch(
+      "https://raw.githubusercontent.com/Mohammed-Rakib/data/main/services.json"
+    )
+      .then((response) => response.json())
+      .then((data) => setServices(data));
+  }, []);
 
   if (services.length === 0) {
     return (

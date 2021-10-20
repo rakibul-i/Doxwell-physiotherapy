@@ -5,7 +5,7 @@ import Home from "./pages/home/Home";
 import Footer from "./pages/shared/Footer";
 import Services from "./pages/services/Services";
 import About from "./pages/shared/About";
-import ServiceDetails from "./pages/services/ServiceDetails";
+import ServiceDetails from "./pages/serviceDetails/ServiceDetails";
 import AuthProvider from "./context/AuthProvider";
 import Signup from "./pages/account/Signup";
 import Signin from "./pages/account/Signin";
